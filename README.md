@@ -81,7 +81,7 @@ Annotation information consists of two parts: video label, and category descript
 ```sh
 # We train the 8 Frames ViT-B/32 video model (i.e., video branch).
 sh scripts/run_train.sh  configs/k400/k400_train_rgb_vitb-32-f8.yaml
-
+```
 
 <a name="testing"></a>
 ## ⚡ Testing
