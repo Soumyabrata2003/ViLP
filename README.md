@@ -11,15 +11,14 @@ This is the official implementation of our **ViLP**, which leverages cross-modal
 </div>
 
 ## Overview
-🚴**BIKE** explores bidirectional cross-modal knowledge from the pre-trained vision-language model (e.g., CLIP) to introduce auxiliary attributes and category-dependent temporal saliency for improved video recognition.
+🚴**ViLP** explores cross-modal knowledge from the pre-trained vision-language model (e.g., CLIP) to introduce the combination of pose, visual information, and text attributes which has not been explored yet.
 
-![BIKE](docs/bike.png)
+![ViLP](Model_new.png)
 
 
 ## Content
 - [Prerequisites](#prerequisites)
 - [Data Preparation](#data-preparation)
-- [Model Zoo](#model-zoo)
 - [Training](#training)  
 - [Testing](#testing)  
 - [BibTeX & Citation](#bibtex)
