@@ -71,8 +71,8 @@ abseiling/-bwYZwnwb8E_000013_000023 300 0
 ### Annotation
 Annotation information consists of two parts: video label, and category description.
 
-- Video Label: As mentioned above, this part is same as the traditional video recognition. Please refer to [lists/k400/kinetics_rgb_train_se320.txt](lists/k400/kinetics_rgb_train_se320.txt) for the format.
-- Category Description: We also need a textual description for each video category.  Please refer to [lists/k400/kinetics_400_labels.csv](lists/k400/kinetics_400_labels.csv) for the format.
+- Video Label: As mentioned above, this part is same as the traditional video recognition. Please refer to [lists/ucf101/train_rgb_split_1.txt](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/train_rgb_split_1.txt) for the format.
+- Category Description: We also need a textual description for each video category.  Please refer to [lists/ucf101/ucf_labels.csv](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/ucf_labels.csv) for the format.
 
 <a name="training"></a>
 ## 🚀 Training
