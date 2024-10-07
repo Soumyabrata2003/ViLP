@@ -82,20 +82,6 @@ Annotation information consists of two parts: video label, and category descript
 # We train the 8 Frames ViT-B/32 video model (i.e., video branch).
 sh scripts/run_train.sh  configs/k400/k400_train_rgb_vitb-32-f8.yaml
 
-# We train the video branch and attributes branch.
-sh scripts/run_co_train.sh  configs/k400/k400_train_video_attr_vitb-32-f8.yaml
-```
-
-
-<details><summary>3. Few-shot Recognition: To train our model under Few-shot scenario, you just need to add one line in the general config file.</summary>
-
-```sh
-# You can refer to config/k400/k400_few_shot.yaml
-data: 
-    ...  # general configurations
-    shot: 2  # i.e., 2-shot setting
-```
-</details>
 
 <a name="testing"></a>
 ## ⚡ Testing
