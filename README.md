@@ -74,16 +74,16 @@ Annotation information consists of two parts: video label, and category descript
 - Video Label: As mentioned above, this part is same as the traditional video recognition. Please refer to [lists/ucf101/train_rgb_split_1.txt](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/train_rgb_split_1.txt) for the format.
 - Category Description: We also need a textual description for each video category.  Please refer to [lists/ucf101/ucf_labels.csv](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/ucf_labels.csv) for the format.
 
-### Heatmap Prep
+### Heatmap Preparation
 We have followed and cloned this repo of [Openpose](https://github.com/gsethi2409/tf-pose-estimation) for generating heatmaps of the corresponding frames. Our implementation is outlined here: [img_to_heatmap](img_to_heatmap.ipynb). 
 
 <a name="training"></a>
 ## 🚀 Training
 
-1. **Single Machine**: To train our model on Kinetics-400 with 8 GPUs in *Single Machine*, you can run:
+1. **Single GPU**: To train our model with 1 GPU in *Single Machine*, you can run:
 ```sh
-# We train the 8 Frames ViT-B/32 video model (i.e., video branch).
-sh scripts/run_train.sh  configs/k400/k400_train_rgb_vitb-32-f8.yaml
+sh scripts/run_train.sh  configs/ucf101/ucf_ViLP.yaml
+# For performing ablation studies, replace the train.py file with train_pose_text.py/train_kin_pretrain.py etc in scripts/run_train.sh
 ```
 
 <a name="testing"></a>
