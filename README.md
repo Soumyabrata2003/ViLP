@@ -74,6 +74,9 @@ Annotation information consists of two parts: video label, and category descript
 - Video Label: As mentioned above, this part is same as the traditional video recognition. Please refer to [lists/ucf101/train_rgb_split_1.txt](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/train_rgb_split_1.txt) for the format.
 - Category Description: We also need a textual description for each video category.  Please refer to [lists/ucf101/ucf_labels.csv](https://github.com/whwu95/BIKE/blob/main/lists/ucf101/ucf_labels.csv) for the format.
 
+### Heatmap Prep
+We have followed and cloned this repo of [Openpose](https://github.com/gsethi2409/tf-pose-estimation) for generating heatmaps of the corresponding frames. Our implementation is outlined here: [img_to_heatmap](img_to_heatmap.ipynb). 
+
 <a name="training"></a>
 ## 🚀 Training
 
@@ -91,32 +94,8 @@ We support single-view validation (default) and multi-view (4x3 views) validatio
 # The testing command for obtaining top-1/top-5 accuracy.
 sh scripts/run_test.sh Your-Config.yaml Your-Trained-Model.pt
 
-# The command for zero-shot evaluation is similar.
-sh scripts/run_test_zeroshot.sh Your-Config.yaml Your-Trained-Model.pt
 ```
 
-We provide more examples of testing commands below.
-
-<details><summary>Zero-shot Evaluation<p></summary>
-
-
-We use the Kinetics-400 pre-trained model (e.g., [ViT-L/14 with 8 frames](configs/k400/k400_train_rgb_vitl-14-f8.yaml)) to perform cross-dataset zero-shot evaluation, i.e., UCF101, HMDB51.
-
-
-- Full-classes Evaluation: Perform evaluation on the entire dataset.
-
-```sh
-
-# On UCF101: reporting the half-classes and full-classes results
-# Half-classes: 86.63 ± 3.4, Full-classes: 80.83
-sh scripts/run_test_zeroshot.sh  configs/ucf101/ucf_zero_shot.yaml exps/k400/ViT-L/14/8f/k400-vit-l-14-f8.pt
-
-# On HMDB51: reporting the half-classes and full-classes results
-# Half-classes: 61.37 ± 3.68, Full-classes: 52.75
-sh scripts/run_test_zeroshot.sh  configs/hmdb51/hmdb_zero_shot.yaml exps/k400/ViT-L/14/8f/k400-vit-l-14-f8.pt
-
-```
-</details>
 
 <a name="bibtex"></a>
 ## 📌 BibTeX & Citation
