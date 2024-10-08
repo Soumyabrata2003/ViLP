@@ -11,7 +11,7 @@ This is the official implementation of our **ViLP**, which leverages cross-modal
 </div>
 
 ## Overview
-🚴**ViLP** explores cross-modal knowledge from the pre-trained vision-language model (e.g., CLIP) to introduce the combination of pose, visual information, and text attributes which has not been explored yet.
+**ViLP** explores cross-modal knowledge from the pre-trained vision-language model (e.g., CLIP) to introduce the combination of pose, visual information, and text attributes which has not been explored yet.
 
 ![ViLP](Model_new.png)
 
