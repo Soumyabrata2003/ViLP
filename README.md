@@ -83,7 +83,7 @@ We have followed and cloned this repo of [Openpose](https://github.com/gsethi240
 1. **Single GPU**: To train our model with 1 GPU in *Single Machine*, you can run:
 ```sh
 sh scripts/run_train.sh  configs/ucf101/ucf_ViLP.yaml
-# For performing ablation studies, replace the train.py file with train_pose_text.py/train_kin_pretrain.py etc in scripts/run_train.sh
+# For performing ablation studies, replace the train.py file with train_pose_text.py/train_withut_text.py etc in scripts/run_train.sh as per requirement.
 ```
 
 <a name="testing"></a>
