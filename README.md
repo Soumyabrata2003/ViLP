@@ -7,7 +7,7 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2311.15732-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2308.03908)
 
 
-This is the official implementation of our **ViLP**, which leverages cross-modal bridge to enhance video recognition by exploring tri-directional knowledge.
+This is the official implementation of **ViLP** (ICVGIP'23 Oral) , which leverages cross-modal bridge to enhance video recognition by exploring tri-directional knowledge.
 </div>
 
 ## Overview
