@@ -37,7 +37,7 @@ This is the official implementation of our **ViLP**, which leverages cross-modal
 - yaml
 - csv
 - Optional: decord (for on-the-fly video training)
-- Optional: torchnet (for mAP evaluation on ActivityNet)
+- Optional: torchnet 
 </p></details>
 
 
